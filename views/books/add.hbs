@@ -1,0 +1,66 @@
+<div class="breadcrumbs bg-info">
+            <div class="col-sm-4">
+                <div class="page-header float-left bg-info text-white">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right bg-info">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right bg-info text-white">
+                            <li class="active">{{viewTitle}}</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<form action="/add/add" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{book._id}}">
+    <div class="form-group">
+        <label>Book Name</label>
+        <input type="text" class="form-control" name="bookname" placeholder="Book Name" value="{{book.bookname}}">
+        <div class="text-danger">
+            {{book.bookameError}}</div>
+    </div>
+    <div class="form-group ">
+            <label>Category</label>
+            <select name="category" class="form-control">
+                
+                <option> please select category </option>
+                 {{#each list}}  
+                <option value=" {{this.cat_name}}">
+
+                {{this.cat_name}}
+            </option>
+              {{/each}}
+            </select>
+        </div>
+    <div class="form-group">
+        <label>Auther</label>
+        <input type="text" class="form-control" name="auther" placeholder="Auther" value="{{book.auther}}">
+        <div class="text-danger">
+            {{employee.emailError}}</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>ISB</label>
+            <input type="text" class="form-control" name="isb" placeholder="ISb" value="{{book.isb}}">
+        </div>
+
+        
+        
+
+        <div class="form-group col-md-6">
+            <label>date</label>
+            <input type="date" class="form-control" name="date" placeholder="Date" value="{{book.date}}">
+            <div class="text-danger">{{employee.cityError}}</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+       
+    </div>
+</form>

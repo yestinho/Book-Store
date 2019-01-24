@@ -1,0 +1,106 @@
+
+<!doctype html>
+
+<head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Book Store App</title>
+ 
+     <link rel="stylesheet" href="/scss/style.css">
+</head>
+<body>
+
+        <!-- Left Panel -->
+
+<aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header mb-5">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand mb-5" href="/"><img src="/bigil.png" height="150px" ></a>
+            </div>
+            <br>
+             <div id="main-menu" class="main-menu collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+                    <li class="active mb-4">
+                        <a href="/"> <i class="menu-icon fa fa-dashboard text-white"></i class="text-white" >Dashboard </a>
+                    </li>
+                    <br>
+
+<li class="bg-success mb-2"><a class="text-center btn-white text-dark "  href="/addcat"><i class="fa fa-plus"></i> Add Category</a></li>
+                    <br>
+
+                    <li class="bg-info mb-2"><a class="text-center btn-white text-dark "  href="../addcat/cat"><i class="fa fa-list-alt"></i> View Category</a></li>
+                    <br>
+
+                    <li class="bg-success mb-2"><a class="text-center btn-white text-dark "  href="/add"><i class="fa fa-plus"></i> Add Book</a></li>
+                    <br>
+
+                   <li class="bg-info mb-2"><a class="text-center btn-white text-dark "  href="../add/list"><i class="fa fa-list-alt"></i> View Books</a></li>
+                    <br>
+                   
+                    <li class="bg-success mb-2"><a class="text-center btn-white text-dark "  href="/addb"><i class="fa fa-plus"></i> Brow Book</a></li>
+                    
+                    
+                        <li class="bg-info mb-2"><a class="text-center btn-white text-dark "  href="/brow"><i class="fa fa-list-alt"></i> View Browed</a></li>
+                </ul>
+                </div>
+                
+       </nav>
+    </aside>
+
+
+    <div id="right-panel" class="right-panel">
+
+<header id="header" class="header">
+
+    <div class="header-menu">
+        <div class="col-md-12">
+        	<h1> Bigil Book Store Mangement Stystem (BBSMS) </h1>
+
+        </div>
+
+       
+    </div>
+
+</header><!-- /header -->
+
+        
+       
+
+        <div class="content bg-white  ">
+
+            <div class="col-sm-12">
+                {{{body}}}
+                </div>
+            </div>
+            </div>
+            {{!-- <footer>
+
+                 <div class="copyright">
+        &copy; Copyright <strong>Bigil studentd</strong>. All Rights Reserved
+      </div>
+            </footer> --}}
+
+
+           
+</body>
+<script src="/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
+     <script src="/js/lib/data-table/datatables.min.js"></script>
+    <script src="/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="/js/lib/data-table/datatables-init.js"></script>
+     <script type="text/javascript">
+        $(document).ready(function() {
+          $('#bootstrap-data-table-export').DataTable();
+        } );
+    </script>
+
+
+    
+</html>
